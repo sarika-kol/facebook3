@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<!----icon link---->
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+	
+
+</head>
+<body>
+	<header>
+		
+	
+<div class="container-flex">
+<nav class="navbar navbar-expand-lg navbar bg-primary" data-bs-theme="">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="image/logo2.png"><label>ocialbook</label></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      	<li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door"></i></a>
+        </li>
+
+
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-people-fill"></i></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" aria-disabled="true"><i class="bi bi-play-btn"></i></a>
+        </li>
+
+         <li class="nav-item">
+          <a class="nav-link" aria-disabled="true"><i class="bi bi-shop-window"></i></a>
+        </li>
+
+
+
+        
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-bell">
+          	
+          	<span class="badge text-bg-danger fs-6  top-0 start-100 translate-middle badge rounded-pill ">4</span>
+          </i> 
+ </a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+
+     <!------right sidebar----->
+<button class="btn btn-primary position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="image/icon.png" id="search"><span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+  
+  </button>
+
+    </div>
+
+
+
+  </div>
+
+
+        
+    
+
+</nav>
+
+	<div class="offcanvas offcanvas-end h-50 d-inline-block" style="width: 220px;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+
+
+    
+    <ul>
+        <li><a class="dropdown-item" href="#">Help & support</a></li>
+        <li><a class="dropdown-item" href="#">Settings & privacy</a></li>
+        <li><a class="dropdown-item" href="#">Activity</a></li>
+        <li><hr class="dropdown-divider">Blocks</li>
+        <li><a class="dropdown-item" href="#">Log out</a></li>
+      </ul>
+  </div>
+</div>
+
+
+
+</header>
+
+
+<!-------column----->
+
+<div class="container-flex">
+  <div class="container-flex ">
+  <div class="row ">
+
+
+    <div class="col">
+      
+
+<!----- left-sidebar------>
+
+<div class="d-flex flex-column flex-shrink-0 bg-body-tertiary" style="width: 280px;">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      <span class="fs-2"></span>
+    </a>
+   
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+         <a href="#" class="nav-link link-body-emphasis">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg><i class="bi bi-skip-forward-circle" id="icon"></i>
+          Latest News
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link link-body-emphasis">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg><i class="bi bi-person"  id="icon"></i>
+          Friends
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link link-body-emphasis">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg><i class="bi bi-people-fill"  id="icon"></i>
+          Group
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link link-body-emphasis">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg><i class="bi bi-camera-video" id="icon"></i>
+          Watch
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link link-body-emphasis">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg><i class="bi bi-cart-plus-fill" id="icon"></i>
+          Market Place
+        </a>
+      </li>
+
+ <li>
+        <a href="#" class="nav-link link-body-emphasis p-3 m-3">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+          <label class="see">See More</label>
+          
+        </a>
+      </li>
+
+    </ul>
+    <hr>
+
+
+
+ <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+         <a href="#" class="nav-link link-body-emphasis">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+          All Shortcuts
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link link-body-emphasis">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg> <i class="bi bi-film" id="icon"></i>
+          Web Development
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link link-body-emphasis">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg> <i class="bi bi-film" id="icon"></i>
+          Web Design
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link link-body-emphasis">
+         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg> <i class="bi bi-film" id="icon"></i>
+          Full Stack
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link link-body-emphasis">
+         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg> <i class="bi bi-film" id="icon"></i>
+          Website Expert
+        </a>
+      </li>
+
+ <li>
+        <a href="#" class="nav-link link-body-emphasis p-3 m-3">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+          <label class="see">See More</label>
+          
+        </a>
+      </li>
+
+    </ul>
+    <hr>
+
+
+
+
+
+
+    <div class="dropdown">
+      <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle p-5" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="image/icon.png" alt="" width="32" height="32" class="rounded-circle me-2">
+        <strong>sarika</strong>
+      </a>
+      <ul class="dropdown-menu text-small shadow">
+        <li><a class="dropdown-item" href="#">Help & support</a></li>
+        <li><a class="dropdown-item" href="#">Settings & privacy</a></li>
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Log out</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+    </div>
+
+    <!-----main content---->
+    <div class="col">
+    
+ <div class="main-content  bg-body-tertiary">
+  <div class="story-gallery">
+    <div class="story">
+      
+<img src="image/upload.jpg">
+<p>post story</p>
+
+
+  
+
+
+    </div>
+
+<div class="story story2">
+      
+<img src="image/member2.jpg">
+<p>post story</p>
+
+
+    </div>
+
+
+<div class="story story2">
+      
+<img src="image/member1.jpg">
+<p>post story</p>
+
+
+    </div>
+
+
+<div class="story story3">
+      
+<img src="image/member3.jpg">
+<p>sarika</p>
+
+
+    </div>
+
+<div class="story story4">
+      
+<img src="image/member5.jpg">
+<p>post story</p>
+
+
+    </div>
+
+
+
+
+
+
+  </div>
+   
+
+ </div>
+    
+
+<div class="post-container">
+  
+<div class="profile">
+  <img src="image/member5.jpg">
+<div>
+  
+  <p>
+    sarika rahaman </p>
+    <small>public<i class="bi bi-caret-down-fill" id="one"></i></small>
+</div>
+</div>
+
+
+<div class="status">
+  <textarea rows="3" placeholder="whats your mind,sarika?"></textarea>
+  <div class="status-icon">
+    
+<a href=""><img src="image/video.png">live video</a>
+<a href=""><img src="image/photo.png">photo/ video</a>
+<a href=""><img src="image/feel.png">feeling/activity</a>
+
+  </div>
+
+</div>
+
+</div>
+
+
+<div class="post-container1">
+  
+<div class="profile">
+  <img src="image/member5.jpg">
+<div>
+  
+  <p>
+    sarika rahaman </p>
+    <span>Auguest 24 2023,13.40pm</span>
+</div>
+</div>
+
+<p>Baby Shark Dance With 5 Little Sharks  Song Remix @ Banana Cartoon 3D Nursery Rhymes.<a href="">#cocomelon</a> <a href="">#cartoon</a></p>
+
+
+<img src="image/back3.jpg" class="post-image">
+
+
+<div class="post-row">
+  <div class="activity-icon">
+    <div><img src="image/like.png">120</div>
+     <div><img src="image/command.png">20</div>
+      <div><img src="image/share.png">12</div>
+
+</div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+<div class="post-container1">
+  
+<div class="profile">
+  <img src="image/member2.jpg">
+<div>
+  
+  <p>
+    sarika rahaman </p>
+    <span>Auguest 24 2023,13.40pm</span>
+</div>
+</div>
+
+<p>Baby Shark Dance With 5 Little Sharks  Song Remix @ Banana Cartoon 3D Nursery Rhymes.<a href="">#cocomelon</a> <a href="">#cartoon</a></p>
+
+
+<img src="https://source.unsplash.com/random/200x200" alt="random" class="post-image">
+
+<div class="post-row">
+  <div class="activity-icon">
+    <div><img src="image/like.png">120</div>
+     <div><img src="image/command.png">20</div>
+      <div><img src="image/share.png">12</div>
+
+</div>
+
+  </div>
+
+</div>
+
+
+
+<div class="post-container1">
+  
+<div class="profile">
+  <img src="image/member3.jpg">
+<div>
+  
+  <p>
+    sarika rahaman </p>
+    <span>Auguest 24 2023,13.40pm</span>
+</div>
+</div>
+
+<p>Baby Shark Dance With 5 Little Sharks  Song Remix @ Banana Cartoon 3D Nursery Rhymes.<a href="">#cocomelon</a> <a href="">#cartoon</a></p>
+
+
+<img src="image/post2.jpg" class="post-image">
+
+
+<div class="post-row">
+  <div class="activity-icon">
+    <div><img src="image/like.png">120</div>
+     <div><img src="image/command.png">20</div>
+      <div><img src="image/share.png">12</div>
+
+</div>
+
+  </div>
+
+</div>
+
+
+
+
+<div class="post-container1">
+  
+<div class="profile">
+  <img src="image/member2.jpg">
+<div>
+  
+  <p>
+    sarika rahaman </p>
+    <span>Auguest 24 2023,13.40pm</span>
+</div>
+</div>
+
+<p>Baby Shark Dance With 5 Little Sharks  Song Remix @ Banana Cartoon 3D Nursery Rhymes.<a href="">#cocomelon</a> <a href="">#cartoon</a></p>
+
+
+<img src="https://source.unsplash.com/200x200/?nature,water" alt="search terms" class="post-image">
+
+
+<div class="post-row">
+  <div class="activity-icon">
+    <div><img src="image/like.png">120</div>
+     <div><img src="image/command.png">20</div>
+      <div><img src="image/share.png">12</div>
+
+</div>
+
+  </div>
+
+</div>
+
+    </div>
+
+
+    <!----right sidebar---->
+
+    <div class="col bg-body-tertiary ">
+    <div class="sidebar-title">
+      <h4>Events</h4>
+      <a href="">See All</a>
+      
+    </div>
+
+    <div class="event">
+
+      <div class="left-event">
+        <h3>18</h3>
+        <span>march</span>
+        
+      </div>
+      <div class="right-event">
+        <h4>social media</h4>
+        <p><i class="bi bi-geo-alt-fill"></i>park street</p>
+        <a href="">more info</a>
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+ <div class="event">
+
+      <div class="left-event">
+        <h3>24</h3>
+        <span>april</span>
+        
+      </div>
+      <div class="right-event">
+        <h4>mobile marketing</h4>
+        <p><i class="bi bi-geo-alt-fill"></i>esplaned</p>
+        <a href="">more info</a>
+
+      </div>
+
+
+
+</div>
+
+
+
+
+
+<div class="sidebar-title">
+      <h4>Adverticement</h4>
+      <a href="">close <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></a>
+      
+    </div>
+
+<img src="image/ad.jpg" class="sidebar-ads">
+
+ <div class="sidebar-title">
+      <h4>conversetion</h4>
+      <a href="">hide chat</a>
+      
+    </div>
+
+
+
+    
+
+<div class="online-list">
+  
+  <div class="online">
+    <img src="image/member1.jpg"><span class="translate-middle p-2 bg-success border border-light rounded-circle">
+  
+  </div>
+  <p>sarika</p>
+</div>
+
+<div class="online-list">
+  
+  <div class="online">
+    <img src="image/member2.jpg"><span class=" translate-middle p-2 bg-success border border-light rounded-circle">
+  
+  </div>
+  <p>sarika</p>
+</div>
+
+<div class="online-list">
+  
+  <div class="online">
+    <img src="image/member3.jpg"><span class=" translate-middle p-2 bg-success border border-light rounded-circle ">
+  
+  </div>
+  <p>sarika</p>
+</div>
+
+
+</div>
+
+<!-----footer---->
+<footer>
+  
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">&copy; 2023 Company, Inc</p>
+  </footer>
+</div>
+</footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
